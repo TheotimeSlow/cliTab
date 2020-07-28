@@ -8,6 +8,7 @@ os.system('clear')
 f = Figlet(font='slant')
 print(f.renderText('Tab'))
 
+
 '''
 sine(329, 0.1)
 sine(349, 0.1)
@@ -57,7 +58,8 @@ def EADG(tab):
 
 
     eString = [41,44,46,49,52,55,58,62,65,69,73,78,82,87,92,98,104,110,117,123,131]
-
+    eString2 = [329,349,369,391,415,440,466,493,523,554,587,622,659,698,739,783,830,880,932,989,1046]
+    
     if n =='play':
         print(tab[3])
         for val in tab[3][1:]:
@@ -67,9 +69,17 @@ def EADG(tab):
             if val != '- ':
                 val = int(val)
                 #print('eString')
-                print(eString[val])
+                sine(eString2[val],0.25)
             else:
                 sleep(0.5)
+
+
+    if n == 'pass':
+        print('skip')
+        tab[3].insert(len(tab[3]), '- ')
+        tab[2].insert(len(tab[2]), '- ')
+        tab[1].insert(len(tab[1]), '- ')
+        tab[0].insert(len(tab[0]), '- ')
 
 
 
