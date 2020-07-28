@@ -1,0 +1,5 @@
+{
+    "editor.fontFamily": "'Victor Mono'",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
